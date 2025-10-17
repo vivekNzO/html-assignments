@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'CustomFont', 'sans-serif';
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url("/fonts//HelveticaNowDisplay-Bold.woff") format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url("/fonts//HelveticaNowDisplay-Medium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url("/fonts//HelveticaNowDisplay-Regular.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.navigation-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.navigation-menu a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navigation-menu:hover a{
+    color: gray;
+}
+
+
+.navigation-menu a:hover{
+    color:#D5FB7E;
+}
+
+.nav-btn{
+    display: flex;
+    gap: 26px;
+}
+
+.nav-btn>button:nth-of-type(1){
+    border: none;
+    background:none;
+    color: white;
+    font-size: 16px;
+}
+.nav-btn>button:nth-of-type(2){
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    padding: 10px;
+}
+
+.emoji-icons img{
+    height: 1em;
+    width: 1em;
+}
+.hero-card{
+    padding: 15px 18px;
+    border-radius: 10px; 
+}
+
+.hero-card:nth-of-type(1){
+    background-color: #FCA831;
+}
+.hero-card:nth-of-type(2){
+    background-color: #D8FF7F;
+}
+.hero-card:nth-of-type(3){
+    background-color: #9305FB;
+}
+
+.hero-card{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-card:hover{
+    background-color: #fff
+}
+.hero-card h1{
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.hero-card span{
+    display: block;
+    width: 95%;
+    border-top: 1px solid black;
+}
+.hero-card-header{
+    margin-top: 120px;
+    margin-bottom: 28px;
+}
+.hero-card-content{
+    margin: 28px 0px 50px 0px;
+    font-size: 16px;
+    line-height: 27px;
+}
+.brands img{
+    width: auto;
+    max-width: 160px;
+    height: auto;
+    filter:grayscale(100%);
+}
+.brands div{
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+.brands span{
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    margin: 0 10px;
+    height: 100px;
+}
