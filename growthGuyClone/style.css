@@ -12,25 +12,27 @@ body{
 
 @font-face {
     font-family: 'CustomFont';
-    src: url("/fonts//HelveticaNowDisplay-Bold.woff") format('woff');
+    src: url("./fonts//HelveticaNowDisplay-Bold.woff") format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'CustomFont';
-    src: url("/fonts//HelveticaNowDisplay-Medium.woff") format('woff');
+    src: url("./fonts//HelveticaNowDisplay-Medium.woff") format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'CustomFont';
-    src: url("/fonts//HelveticaNowDisplay-Regular.woff") format('woff');
+    src: url("./fonts//HelveticaNowDisplay-Regular.woff") format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
+
+
 
 .navigation-menu{
     display: flex;
@@ -41,6 +43,7 @@ body{
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
+    font-size: 15px;
 }
 
 .navigation-menu:hover a{
@@ -57,17 +60,31 @@ body{
     gap: 26px;
 }
 
-.nav-btn>button:nth-of-type(1){
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    color: white;
+}
+.contact button{
     border: none;
     background:none;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 500;
 }
-.nav-btn>button:nth-of-type(2){
+.nav-btn>button{
     border: none;
-    padding: 12px 24px;
-    border-radius: 10px;
+    padding: 13px 24px;
+    border-radius: 6px;
     font-size: 16px;
+    font-weight: 500;
+    
+}
+.nav-btn i{
+    font-size: 20px;
+    align-items: center;
 }
 
 .container{
@@ -76,13 +93,45 @@ body{
     padding: 10px;
 }
 
+.header-container{
+    display: flex; justify-content: space-between; align-items: center; margin: 0px 300px; padding: 24px 24px;
+}
+
+header{
+    font-weight: 500;
+}
+
+.hero{
+    background-color: #170E48; display: flex; justify-content: center; align-items: center; padding: 100px 0px;
+}
+.hero h1{
+    color: white; font-size: 65px;font-weight: 700; line-height: 76px; text-align: center; letter-spacing: -2px;
+}
+
+.hero button{
+    font-size: 16px; padding: 16px 45px; font-family: 'CustomFont'; border-radius: 8px; border:none; font-weight: 500;
+}
+
+.hero-card i{
+    font-size: 50px; transform: rotate(-45deg);
+}
+
 .emoji-icons img{
     height: 1em;
     width: 1em;
 }
+
 .hero-card{
     padding: 15px 18px;
     border-radius: 10px; 
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero-card h3{
+    font-size: 23px;
+    font-weight: 500;
 }
 
 .hero-card:nth-of-type(1){
@@ -95,19 +144,12 @@ body{
     background-color: #9305FB;
 }
 
-.hero-card{
-    width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.hero .arrow-footer{
+    margin-bottom: 10px;
 }
 
 .hero-card:hover{
     background-color: #fff
-}
-.hero-card h1{
-    font-size: 23px;
-    font-weight: 500;
 }
 
 .hero-card span{
@@ -124,8 +166,20 @@ body{
     font-size: 16px;
     line-height: 27px;
 }
+
+.brands-container{
+    display: flex; justify-content: center; flex-direction: column; margin-top: 20px; padding: 10px; gap: 34px;
+}
+
+.brands{
+    border: 1px solid gray; border-radius: 14px; display: flex; justify-content: space-around; align-items: center; padding: 10px 32px;
+}
+
+.brands-container h5{
+    color: white; font-weight: 500; font-size: 20px; text-align: center;
+}
 .brands img{
-    width: auto;
+    width: 100%;
     max-width: 160px;
     height: auto;
     filter:grayscale(100%);
@@ -140,4 +194,92 @@ body{
     border-left: 1px solid #ccc;
     margin: 0 10px;
     height: 100px;
+}
+
+
+/* BOOK CONSULTATION SECTION */
+.book-consultation-section{
+    background-color: #0D0938; display: flex; justify-content: center; align-items: center; padding: 120px 0px;
+}
+
+.book-consultation-section .left{
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    /* margin-right: 40px; */
+    justify-content: center;
+}
+
+.book-consultation-section .left p{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 12px;
+    /* margin-top: 40px; */
+}
+.book-consultation-section .left h2{
+    font-size: 48px;
+    color: white;
+    margin: 20px 0px;
+}
+.book-consultation-section .left button{
+    font-size: 16px;
+    border: none;
+    padding: 18px 34px;
+    width: auto;
+    font-weight: 400;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.book-consultation-section .left i{
+    margin-right: 6px;
+    color: white;
+    font-size: 16px;
+}
+
+.book-consultation-section .right{
+    padding: px;
+    margin: 20px 10px 20px 60px;
+    color: white;
+}
+.book-consultation-section .right p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.check-items{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.check-items div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.check-items i{
+    color: #D5FB7E;
+    font-size: 30px;
+}
+
+.check-items p{
+    font-size: 17px;
+}
+
+.get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #140B45;
+    padding: 100px 0px 60px 0px;
+}
+
+.get-started-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.get-started-content p{
+    padding: 0px 0px 0px 5px;
+    font-size: 16px;
 }
