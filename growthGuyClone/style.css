@@ -54,7 +54,10 @@ body {
 
 .nav-btn {
   display: flex;
+  font-family: "CustomFont";
   gap: 26px;
+  font-size: 20px;
+  align-items: center;
 }
 
 .contact {
@@ -70,17 +73,26 @@ body {
   color: white;
   font-size: 15px;
   font-weight: 500;
+  font-family: "CustomFont", "sans-serif";
+  cursor: pointer;
 }
-.nav-btn > button {
+.nav-btn>button {
   border: none;
+  font-family: "CustomFont", "sans-serif";
   padding: 13px 24px;
   border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
 }
-.nav-btn i {
-  font-size: 20px;
-  align-items: center;
+
+.nav-btn>button:hover{
+
+  transform: scale(1.09);
+  background-color: #d8ff7f;
+  color: #000;
+  /* border: 1px solid black; */
 }
 
 .container {
@@ -117,20 +129,30 @@ header {
   letter-spacing: -2px;
 }
 
-.hero button {
+.hero-main-button {
   font-size: 16px;
   padding: 16px 45px;
   font-family: "CustomFont";
   border-radius: 8px;
   border: none;
   font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
+  
+}
+
+.hero-main-button:hover{
+  background-color: #d4fa7d;
+  color: #000;
+  transform: scale(1.1);
+  text-transform: none;
 }
 
 .hero-card i {
   font-size: 50px;
   transform: rotate(-45deg);
 }
-.hero-card img{
+.hero-card img {
   max-height: 50px;
   max-width: 50px;
   transform: rotate(-45deg);
@@ -144,7 +166,7 @@ header {
 .hero-card {
   padding: 15px 18px;
   border-radius: 10px;
-  /* width: 33.33%; */
+  width: 33.33%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -229,6 +251,23 @@ header {
   height: 100px;
 }
 
+.hero-second-button{
+  background-color: #D6525200;
+  color: #fff;
+  padding: 15px 80px;
+  border: 1px solid #d4fa7d;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
+}
+
+.hero-second-button:hover{
+  text-transform: none;
+  transform: scale(1.1);
+  background-color: #d4fa7d;
+  color: #000;
+}
+
 /* BOOK CONSULTATION SECTION */
 .book-consultation-section {
   background-color: #0d0938;
@@ -265,7 +304,16 @@ header {
   font-weight: 400;
   border-radius: 8px;
   margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
+
 }
+
+.book-consultation-section .left button:hover{
+  background-color: #d4fa7d;
+  transform: scale(1.1);
+}
+
 .book-consultation-section .left i {
   margin-right: 6px;
   color: white;
@@ -399,6 +447,13 @@ header {
   font-size: 16px;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
+
+}
+.get-started-btn-div button:hover{
+  background-color: #d4fa7d;
+  transform: scale(1.1);
 }
 
 /* TESTIMONIALS SECTION */
@@ -445,6 +500,7 @@ header {
   gap: 20px;
   max-width: 1276px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .testimonial-card {
@@ -577,6 +633,7 @@ header {
   padding: 18px 34px;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 /* SERVICES */
@@ -618,65 +675,66 @@ header {
 }
 
 .cell-content h3::before {
-  content:"";
+  content: "";
   display: block;
-  background-image:  url(./images/download.svg);
+  background-image: url(./images/download.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 30px;
   height: 30px;
   background-size: 30px;
   border-radius: 100%;
-  background-color:#504CDE;
+  background-color: #504cde;
   padding: 15px;
   margin-bottom: 28px;
 }
 
-.first-cell{
+.first-cell {
   padding: 10px;
 }
 
-.first-cell h2{
+.first-cell h2 {
   font-size: 43px;
   color: #d8ff7f;
   margin-bottom: 20px;
   letter-spacing: -2px;
 }
 
-.first-cell p{
+.first-cell p {
   font-size: 18px;
   margin-bottom: 20px;
   line-height: 27px;
 }
 
-.first-cell button{
+.first-cell button {
   border: none;
   font-size: 16px;
   padding: 18px 34px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
-.blog-section{
+.blog-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #140B45;
+  background-color: #140b45;
   padding: 30px 0px 50px 0px;
 }
 
-.blog{
+.blog {
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-.blog-cards{
+.blog-cards {
   display: flex;
   gap: 50px;
 }
 
-.blog-card{
+.blog-card {
   background-color: white;
   padding: 15px 10px 0px 15px;
   border-radius: 8px;
@@ -686,56 +744,54 @@ header {
   /* justify-content: space-between; */
   width: 33%;
   gap: 20px;
-
 }
 
-.blog-card img{
+.blog-card img {
   max-height: 50px;
   max-width: 50px;
   transform: rotate(-45deg);
 }
 
-.blog-header{
+.blog-header {
   display: flex;
   align-items: center;
   color: white;
 }
-.blog-header img{
+.blog-header img {
   max-width: 18px;
   max-height: 18px;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(273deg) brightness(103%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(273deg) brightness(103%) contrast(103%);
 }
-.blog-header span{
+.blog-header span {
   margin-left: 9.5px;
   font-size: 16px;
 }
-.blog h2{
+.blog h2 {
   color: white;
   font-size: 48px;
   /* margin-bottom: 25px; */
 }
 
-
-.blog-time{
+.blog-time {
   display: flex;
   gap: 8px;
   /* margin-bottom: 32px; */
 }
 
-
-.blog-time span{
+.blog-time span {
   font-size: 12px;
   font-weight: 600;
 }
-.blog-card h4{
+.blog-card h4 {
   font-size: 20px;
   /* margin-bottom: 24px; */
 }
 
-.blog-date{
+.blog-date {
   font-size: 12px;
 }
-.blog-divider{
+.blog-divider {
   display: block;
   border-bottom: 1px solid black;
   /* margin-top: 20px;
@@ -743,19 +799,159 @@ header {
   width: 60%;
 }
 
-.blog-button-div{
+.blog-button-div {
   display: flex;
-  justify-content: center;align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
-.blog-button-div button{
+.blog-button-div button {
   border: none;
   font-size: 16px;
   padding: 18px 34px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
-.blog-card>p{
+.blog-card > p {
   font-size: 15px;
   line-height: 27px;
+}
+
+.faq-section {
+  padding: 100px 0px;
+  background-color: #130a44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-container {
+  max-width: 900px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.faq-header-left {
+  padding: 10px;
+  color: white;
+  width: 50%;
+}
+.faq-header-left h2 {
+  font-size: 48px;
+  letter-spacing: -1.5px;
+}
+.faq-header-right {
+  color: #e6e6e6;
+  width: 50%;
+  font-size: 17px;
+  line-height: 27px;
+  padding: 10px;
+  margin-left: 32px;
+}
+
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 10px 10px;
+  gap: 20px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 24px;
+  border: 1px solid #9f9f9f40;
+  background-color: #00b67a0d;
+  border-radius: 8px;
+}
+.question-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.question:hover p {
+  color: #d5fb7e;
+}
+
+.showAnswer.question:hover p {
+  color: #000;
+}
+
+.question i {
+  font-size: 14px;
+}
+
+.canvas-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #160d47;
+  padding: 100px 0px;
+}
+.canvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4fa7d;
+  /* margin: 10px; */
+  padding: 92px 0px 82px 0px;
+  border-radius: 24px;
+}
+
+.canvas h2 {
+  font-size: 48px;
+  margin-bottom: 34px;
+  max-width: 800px;
+  text-align: center;
+}
+.canvas p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 40px;
+  max-width: 750px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.canvas button {
+  font-size: 16px;
+  padding: 18px 34px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+}
+
+.showAnswer .answer {
+  display: block;
+  margin-top: 34px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.showAnswer {
+  background-color: #d4fa7d;
+  color: #000;
 }
