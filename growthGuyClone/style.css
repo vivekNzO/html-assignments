@@ -1059,6 +1059,7 @@ header {
   background-color: #160d47;
   padding: 100px 0px;
   overflow: hidden;
+  position: relative;
 }
 .canvas {
   display: flex;
@@ -1207,6 +1208,6 @@ footer a{
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 100%;
   /* z-index: -1; */
 }
