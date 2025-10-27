@@ -60,6 +60,10 @@ body {
   gap: 32px;
 }
 
+.navigation-menu .active{
+  color: #d4fa7d;
+}
+
 .navigation-menu a {
   text-decoration: none;
   color: white;
@@ -367,7 +371,7 @@ header {
   transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
 }
 .consultation-button:hover span{
-  transform: scale(0.90909get-started-btn-div);
+  transform: scale(0.90909);
 }
 
 .book-consultation-section .left i {
@@ -505,19 +509,19 @@ header {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
-
 }
+
 .get-started-btn-div button:hover{
   background-color: #d4fa7d;
   transform: scale(1.1);
 }
 
-.get-started-btn-div span{
+.get-started-span{
     display: block;
     transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
 }
 
-.get-started-btn-div:hover span{
+.get-started-btn-div button:hover .get-started-span{
   transform: scale(0.90909);
 }
 
@@ -1067,12 +1071,10 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #d4fa7d;
-  /* margin: 10px; */
   padding: 92px 0px 82px 0px;
   border-radius: 24px;
   background-image: url(./images/Growth-Marketing-CTA-BG-1.webp);
   width: 100%;
-  /* height: 721px; */
 }
 
 .canvas h2 {
@@ -1210,4 +1212,328 @@ footer a{
   width: 100%;
   height: 100%;
   /* z-index: -1; */
+}
+
+.caseStudies-hero{
+  padding: 70px 0px;
+}
+
+.caseStudies-hero button{
+  padding: 18px 34px;
+}
+.case-hero-cards{
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  gap: 42px;
+}
+
+
+.case-card-img img{
+  border-radius: 12px;
+  max-width: 574.75px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.case-card-footer{
+  color: white;
+  margin-top: 20px;
+}
+
+.case-card-footer a{
+  font-family: "Figtree", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.case-card-footer p{
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 14px;
+}
+
+.blog-hero{
+  background-color: #160D47;
+  padding: 40px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-hero-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,#3B35D2 25%, rgba(255, 255, 255, 0) 100%), url("./images/Growth-Marketing-CTA-BG-1.webp");
+  background-color: #3B35D2;
+  color: white;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+.blog-hero-content{
+  padding: 90px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.blog-hero-content h1{
+  font-size: 69px;
+  letter-spacing: -2px;
+}
+
+.blog-hero-content p{
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 445px;
+  text-align: center;
+}
+
+.blog-fancy-btn{
+  display: flex;
+  border: 1px solid #A0A0A054;
+  border-radius: 100px;
+  padding: 10px 18px;
+  box-shadow: 0px 1px 2px 0px rgba(42.00000000000001, 59.00000000000001, 81, 0.1607843137254902);
+  gap: 8px;
+  align-items: center;
+  color: black;
+  background-color: white;
+}
+
+.blog-fancy-btn img{
+  max-width: 13.47px;
+  max-height: 13.47px;
+}
+
+.blog-fancy-btn h4{
+  font-size: 14px;
+}
+
+.blog-page-cards-container{
+  padding: 10px 10px;
+  margin-top: 50px;
+}
+
+.blog-page-cards{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 36px 40px;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.blog-page-card {
+  background-color: #d4fa7d;
+  border-radius: 8px;
+  border: 1px solid #d4fa7d;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
+  max-width: 386px;
+}
+
+.blog-page-card:hover{
+  background-color: white;
+}
+
+.blog-featured-img{
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog-arrow-div img{
+  max-height: 50px;
+  max-width: 50px;
+  transform: rotate(-45deg);
+}
+
+.blog-page-card-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px 10px;
+}
+
+.blog-page-card-content p{
+  line-height: 27px;
+}
+
+.blog-page-card-content h4{
+  font-size: 20px;
+}
+
+.blog-arrow-div{
+  justify-content: flex-end;
+}
+
+.form-section{
+  padding: 80px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #130A44;
+}
+
+.form-section h1{
+  color: white;
+  font-size: 60px;
+  max-width: 782px;
+  letter-spacing: -2px;
+  padding: 0px -10px;
+}
+.form-title-container{
+  max-width: 1280px;
+  width: 100%;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  max-width: 914px;
+  padding: 10px;
+}
+
+.form-name{
+  display: flex;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+form label{
+  font-size: 16px;
+  color: #c7c7c7;
+  display: block;
+}
+
+form select, form textarea,form input{
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #c7c7c7;
+  background-color: #130A44;
+  margin-top: 5px;
+  color: white;
+  border-radius: 4px;
+}
+
+form input:focus{
+  outline: none;
+  border: 1px solid #d4fa7d;
+  caret-color: white;
+}
+
+form span{
+  margin-top: 8px;
+  font-size: 12px;
+  color: #c7c7c7;
+  font-style: italic;
+}
+
+.form-name{
+  display: flex;
+  gap: 20px;
+}
+.firstName{
+  width: 50%;
+}
+.lastName{
+  width: 50%;
+}
+
+/* form select{
+
+} */
+
+form option{
+  font-size: 16px;
+  background-color: #2301e6;  
+  line-height: 2.2em;
+}
+form option:focus,form option:hover{
+  background-color: #2301e6;
+  color: #d4fa7d;
+}
+
+.form-btn{
+  display: flex;
+  align-items: center;
+}
+
+form button{
+  font-size: 16px;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  max-width: 340px;
+    transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
+
+}
+
+form button:hover{
+  background-color: #d4fa7d;
+}
+
+.form-btn span{
+  display: block;
+}
+
+form img{
+  max-width: 15px;
+}
+
+.coffee-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #160D47;
+  padding: 80px 0px;
+}
+
+.coffee{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  color: white;
+}
+
+.coffee-fancy-btn{
+  display: flex;
+  border: 1px solid #A0A0A054;
+  border-radius: 100px;
+  padding: 10px 18px;
+  box-shadow: 0px 1px 2px 0px rgba(42.00000000000001, 59.00000000000001, 81, 0.1607843137254902);
+  gap: 8px;
+  align-items: center;
+  color: black;
+  background-color: white;
+}
+
+.coffee-fancy-btn img{
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.coffee-fancy-btn h4{
+  font-size: 14px;
 }
