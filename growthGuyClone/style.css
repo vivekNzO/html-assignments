@@ -1105,6 +1105,15 @@ header {
   transform: scale(1.1);
 }
 
+.canvas-button span{
+  display: block;
+  transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
+}
+
+.canvas-button:hover span{
+  transform: scale(0.90909);
+}
+
 .answer {
   display: none;
 }
@@ -1226,6 +1235,7 @@ footer a{
   display: flex;
   justify-content: space-around;
   gap: 42px;
+  margin-top: 70px;
 }
 
 
@@ -1319,7 +1329,7 @@ footer a{
 
 .blog-page-cards-container{
   padding: 10px 10px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .blog-page-cards{
@@ -1360,7 +1370,7 @@ footer a{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 10px;
 }
 
 .blog-page-card-content p{
@@ -1439,7 +1449,7 @@ form input:focus{
   caret-color: white;
 }
 
-form span{
+form .span-desc{
   margin-top: 8px;
   font-size: 12px;
   color: #c7c7c7;
@@ -1457,9 +1467,9 @@ form span{
   width: 50%;
 }
 
-/* form select{
-
-} */
+form select{
+   appearance: none;
+}
 
 form option{
   font-size: 16px;
@@ -1473,27 +1483,35 @@ form option:focus,form option:hover{
 
 .form-btn{
   display: flex;
-  align-items: center;
+  justify-content: start
 }
 
-form button{
-  font-size: 16px;
-  padding: 15px 50px;
-  border: none;
-  border-radius: 10px;
+.form-btn button{
   display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
-  max-width: 340px;
-    transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
-
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.68, .01, .58, .75);
 }
 
-form button:hover{
+.form-btn button:hover{
   background-color: #d4fa7d;
 }
 
-.form-btn span{
-  display: block;
+.form-btn-span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-btn button img{
+    width: 18px;
+    height: 18px;
 }
 
 form img{
@@ -1515,18 +1533,30 @@ form img{
   align-self: center;
   text-align: center;
   color: white;
+  background-color: #1D1457;
+
 }
 
 .coffee-fancy-btn{
   display: flex;
   border: 1px solid #A0A0A054;
   border-radius: 100px;
-  padding: 10px 18px;
+  padding: 8px 18px;
   box-shadow: 0px 1px 2px 0px rgba(42.00000000000001, 59.00000000000001, 81, 0.1607843137254902);
   gap: 8px;
   align-items: center;
   color: black;
-  background-color: white;
+  background-color:#d4fa7d;
+  margin-bottom: 20px;
+}
+
+.coffee{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D1457;
+  padding: 74px 0px;
 }
 
 .coffee-fancy-btn img{
@@ -1536,4 +1566,101 @@ form img{
 
 .coffee-fancy-btn h4{
   font-size: 14px;
+}
+
+.coffee h2{
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+.coffee p{
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+
+.contact-cards{
+  padding: 10px;
+  display: flex;
+  max-width: 1164px;
+  gap: 10px;
+}
+
+.contact-card{
+  text-align: left;
+  margin: 10px;
+  padding: 24px;
+  border: 8px solid #8636F814;
+  width: 33%;
+  outline: 1px solid #4b4b4bb9;
+  background-color: #150C46;
+  box-shadow:  0px 0px 1px rgba(160, 160, 160, 0.32941176470588235);
+  border-radius: 16px;
+}
+
+.contact-card h4{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact-card p{
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.contact-card span{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.contact-icon{
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+}
+.contact-icon i{
+  font-size: 24px;
+}
+
+.iti {
+  width: 100%;
+}
+
+input[type="tel"]{
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.iti__selected-dial-code {
+  color: white !important;
+}
+
+.project-requirement{
+  position: relative;
+}
+
+.select-drop-arrow{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: white;
+  top: 50%;
+  right: 2%;
+}
+
+.hear-about{
+  position: relative;
+}
+
+form select:focus + .select-drop-arrow{
+  transform: rotate(180deg);
 }

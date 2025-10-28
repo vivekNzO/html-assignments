@@ -13,6 +13,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="shortcut icon" href= "./images/Growthguy-Logos-04-150x150.webp" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+
 </head>
 <body>
     <header style="background-color: #160D47">
@@ -62,12 +64,13 @@
                         <div class="email">
                             <label for="email">Email Address</label>
                             <input type="text">
-                            <span>Example: user@website.com</span>
+                            <span class="span-desc">Example: user@website.com</span>
                         </div>
                         <div class="mobile">
                             <label for="mobile">Mobile Number</label>
-                            <input type="tel">>
-                            <span>Preferably enter WhatsApp enabled number | IMP: I do not spam or message unnecessarily, your data safety is of utmost importance to me.</span>
+                            <input id="phone" type="tel">
+                            <span style="font-size: 12px;">✅</span>
+                            <span class="span-desc"> Preferably enter WhatsApp enabled number | IMP: I do not spam or message unnecessarily, your data safety is of utmost importance to me.</span>
                         </div>
                         <div class="company-name">
                             <label for="company">
@@ -79,7 +82,7 @@
                                 Website
                             </label>
                             <input type="text" placeholder="Enter your website address">
-                            <span>Example: https://www.growthguy.in</span>
+                            <span class="span-desc">Example: https://www.growthguy.in</span>
                         </div>
                         <div class="project-requirement">
                             <label for="project-req">
@@ -94,6 +97,7 @@
                                 <option value="">Analytics & CRO</option>
                                 <option value="">Workflow Automation</option>
                             </select>
+                        <i class="select-drop-arrow fa-solid fa-angle-down"></i>
                         </div>
                         <div class="hear-about">
                             <label for="hear-about">Where did you hear about me?</label>
@@ -105,16 +109,17 @@
                                 <option value="">Referred by a friend</option>
                                 <option value="">Other</option>
                             </select>
+                            <i class="select-drop-arrow fa-solid fa-angle-down"></i>
                         </div>
                         <div class="other-details">
                             <label for="other-details">Other Details</label>
                             <textarea name="other-details" id="other-details" rows="10"></textarea>
-                            <span>Add all the necessary details related to the project, budget, timelines etc if any...</span>
+                            <span class="span-desc">Add all the necessary details related to the project, budget, timelines etc if any...</span>
                         </div>
 
                         <div class="form-btn">
                         <button>
-                            Proceed to Book Consultation <span> <img src="./images/right-arrow.svg" alt=""> </span>
+                            Proceed to Book Consultation <span class="form-btn-span"> <img src="./images/right-arrow.svg" alt=""> </span>
                         </button>
                         </div>
 
@@ -125,7 +130,7 @@
         </section>
 
         <section class="coffee-section">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <div class="coffee">
                     <div class="coffee-fancy-btn">
                         <img src="./images/Growth-Marketing-Icon-1-1.webp" alt="">
@@ -136,31 +141,25 @@
 
                     <div class="contact-cards">
                         <div class="contact-card">
-                            <i></i>
+                            <span class="contact-icon" style="background-color: #E5F6D0;">
+                            <i class="fa-solid fa-envelope" style="color: #162909;"></i>
+                            </span>
                             <h4>Email</h4>
                             <p>Contact us via email for swift and precise assistance. </p>
                             <span>vikas@growthguy.in</span>
                         </div>
-                    </div>
-                    <div class="contact-cards">
                         <div class="contact-card">
-                            <i></i>
+                            <span class="contact-icon" style="background-color: #DEE7F8; color: #1F264D;">
+                            <i class="fa-solid fa-location-dot"></i>
+                            </span>
                             <h4>Office Address</h4>
                             <p>Visit my office - Let's brainstorm your growth.</p>
                             <span>Flat No. 603, Nyati Esplanade, Uttam Nagar Bavdhan - 411021</span>
                         </div>
-                    </div>
-                    <div class="contact-cards">
                         <div class="contact-card">
-                            <i></i>
-                            <h4>Email</h4>
-                            <p>Contact us via email for swift and precise assistance. </p>
-                            <span>vikas@growthguy.in</span>
-                        </div>
-                    </div>
-                    <div class="contact-cards">
-                        <div class="contact-card">
-                            <i></i>
+                            <span class="contact-icon" style="background-color: #F9ECC9; color: #4F2716;">
+                            <i class="fa-solid fa-phone-volume" style="transform: rotate(45deg);"></i>
+                            </span>
                             <h4>Phone</h4>
                             <p>Call me for immediate support and personalized solutions.</p>
                             <span>+91 9049728900</span>
@@ -296,6 +295,17 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+<script>
+  const input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    initialCountry: "in", // Default to India
+    preferredCountries: ["in", "us", "gb"],
+    separateDialCode: true,
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+  });
+</script>
 <script>
   AOS.init({
     duration: 1000, 
