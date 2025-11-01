@@ -11,9 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <div class="my-container">
       <div class="head">
@@ -108,29 +113,29 @@
         <div class="quality d-flex flex-column">
           <h2 class="text-center fw-semibold" style="font-size:44px">Quality & Service Second To None</h2>
           <p class="text-center mx-auto mb-0" style="font-size:18px; max-width: 855px;">At President Container Group, quality and service aren't just words-they're promises. We fully satisfy our customers' needs without compromise</p>
-          <div class="quality-cards shadow-lg d-flex justify-content-between">
-            <div class="card" >
+          <div class="quality-cards  d-flex justify-content-between">
+            <div class="card shadow-lg" >
               <img src="./images/Rectangle 23.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">MANUFACTURING</h5>
                 <p class="card-text">PCG uses top-quality raw materials to produce custom corrugated containers tailored to your needs. Our 522,000 sq. ft. facility runs 24/7, and our customer service team is available Monday to Friday, 8 a.m. to 5 p.m.</p>
               </div>
             </div>
-            <div class="card col-3">
+            <div class="card shadow-lg">
               <img src="./images/Rectangle 25.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">DESIGN</h5>
                 <p class="card-text">Our expert design team collaborates with clients from concept to completion, providing full-color renderings and working closely with production to bring ideas to life.</p>
               </div>
             </div>
-            <div class="card col-3">
+            <div class="card shadow-lg">
               <img src="./images/Rectangle 27.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">ASSEMBLY & FULFILLMENT</h5>
                 <p class="card-text">PCG offers product fulfillment and assembly in our 60,000 sq. ft. facility - perfect for clients lacking space or staff. We deliver fast, cost-effective, and high-quality service you can count on.</p>
               </div>
             </div>
-            <div class="card col-3">
+            <div class="card shadow-lg">
               <img src="./images/Rectangle 29.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">JUST-IN-TIME <br> SROCKING PROGRAM</h5>
@@ -192,11 +197,28 @@
             <h3>Custom Box Design & Manufacturing</h3>
             <p>We design and manufacture custom boxes and custom packaging to help you deliver a memorable customer experience.</p>
             <span>Products:</span>
-            <div class="president-products">
-              <div class="president-product"><img src="./images/25b54a9deceb0bd4e5f6521650d99df102dc7ffb.png" alt=""><span>Custom Shippers</span></div>
-              <div class="president-product"><img src="./images/3501b7d2e5f453061ec5ddd9d6a10ba990f6dc7e.png" alt=""><span>Custom inserts</span></div>
-              <div class="president-product"><img src="./images/c60a6735f5ff6e636af1bc3374973dffa20c2463.png" alt=""><span>Custom tape & labels</span></div>
-              <div class="president-product"><img src="./images/ac0102bffd8607524377ab73ffc2e200b64bf9f9.png" alt=""><span>And more!</span></div>
+            <div class="president-products d-flex flex-wrap">
+              <div class="president-product">
+                <div class="product-img-div">
+                  <img src="./images/25b54a9deceb0bd4e5f6521650d99df102dc7ffb.png" alt="">
+                </div>
+              <span>Custom Shippers</span></div>
+              <div class="president-product">
+                <div class="product-img-div">
+                <img src="./images/3501b7d2e5f453061ec5ddd9d6a10ba990f6dc7e.png" alt="">
+                </div>
+              <span>Custom inserts</span></div>
+              <div class="president-product">
+                <div class="product-img-div">
+                <img src="./images/c60a6735f5ff6e636af1bc3374973dffa20c2463.png" alt="">
+                </div>
+                <span>Custom tape & labels</span></div>
+              <div class="president-product">
+                <div class="product-img-div">
+                <img src="./images/ac0102bffd8607524377ab73ffc2e200b64bf9f9.png" alt="">
+                </div>
+                <span>And more!</span>
+              </div>
             </div>
             <button>
               EXPLORE PRESIDENT CONTAINER
@@ -209,9 +231,245 @@
       </div>
 
     </section>
+
+    <section class="solutions-section d-flex align-items-center justify-content-center">
+      <div class="my-inner">
+        <div class="solutions">
+          <h2 class="text-center">Smarter Packaging Solutions for a Modern World</h2>
+          <p class="text-center">From large-scale production to just-in-time delivery and eco-conscious practices - we deliver packaging that meets today's business and environmental needs.</p>
+          <div class="solution-cards d-flex">
+            <div class="card shadow-lg" >
+              <img src="./images/image 8.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Speedy, Large-Scale Production</h5>
+                <p class="card-text">With 625,000 sq. ft. of space and advanced machinery, including two corrugators, we deliver fast, high-quality corrugated packaging across North America.</p>
+              </div>
+            </div>
+            <div class="card shadow-lg" >
+              <img src="./images/image 9.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Integrated Automation & Just-in-Time Delivery</h5>
+                <p class="card-text">We coordinate with your warehouse to determine inventory forecasts and schedule automatic, just-in-time deliveries.</p>
+              </div>
+            </div>
+            <div class="card shadow-lg" >
+              <img src="./images/image 10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Packaging that protects the Planet</h5>
+                <p class="card-text">We do our part to make our products as sustainable as possible through ethical fiber sourcing, harnessing solar power for manufacturing operations, and in-house recycling processes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel-section d-flex justify-content-center align-items-center">
+      <div class="carousel-prev">
+          <i class="fa-fw ti ti-angle-down"></i>
+      </div>
+      <div class="carousel-next">
+          <i class="fa-fw ti ti-angle-down"></i>
+      </div>
+      <div class="my-container">
+        <div class="carousel-div">
+            <h2>What Leaders Are Saying</h2>
+            <div class="carousel d-flex owl-carousel owl-theme" id="owl-carousel">
+              <div class="carousel-card d-flex flex-column justify-content-between">
+                <div class="carousel-comment">
+                  <p>We needed high-volume packaging on a tight schedule, and President Container Group delivered beyond expectations. Their team handled everything from design to delivery with professionalism and precision.</p>
+                </div>
+                <div class="carousel-profile d-flex">
+                  <img src="./images/1be62afb20fe6af226bc53ee04f7fe979eef6375.jpg" alt="">
+                  <div class="carousel-profile-description">
+                    <h4>Mark Bradley</h4>
+                    <p>Plant/Operations Manager, <br> Vistra Baldwin Energy</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-card d-flex flex-column justify-content-between">
+                <div class="carousel-comment">
+                  <p>We've worked with many packaging vendors, but few offer the production capacity and flexibility that President Container does. Their custom corrugated designs fit our product line perfectly.</p>
+                </div>
+                <div class="carousel-profile d-flex">
+                  <img src="./images/5e7169001c9babdc28d85f0ebdebef99ff522fb1.jpg" alt="">
+                  <div class="carousel-profile-description">
+                    <h4>Gary Hilberg</h4>
+                    <p>President, Continuum Energy <br><br></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-card d-flex flex-column justify-content-between">
+                <div class="carousel-comment">
+                  <p>As our business expanded, President Container scaled with us effortlessly. Their 625,000 sq. ft. facility and dedicated team make a real difference.</p>
+                </div>
+                <div class="carousel-profile d-flex">
+                  <img src="./images/54cc363d7fd7c2bc71b81c470598ae6b21ecde0b.jpg" alt="">
+                  <div class="carousel-profile-description">
+                    <h4>Joe Riestenberg</h4>
+                    <p>Plant Manager, Vistra Miami Fort Station</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section d-flex postition-relative">
+      <div class="form-left w-50">
+        <div class="form-left-div d-flex flex-column">
+          <h2>Get Your Custom Packaging Solution Quote</h2>
+          <p>Fill out the form below to receive a personalized quote tailored to your packaging needs. Our team will get back to you as soon as possible with a detailed proposal.</p>
+          <div class="form-left-contact">
+            <div class="contact-left">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p>200 West Commercial Ave. <br> Moonachie, New Jersey <br> 07074, US</p>
+          </div>
+          <div class="form-left-contact">
+            <div class="contact-left">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <p>421-463-0220</p>
+          </div>
+          <div class="form-left-contact">
+            <div class="contact-left">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <p>marketing@presidentcontainergroup.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-right w-50">
+        <img src="./images/42190afa5b836876a54589d053995f37d3b27633.png" alt="">
+      </div>
+
+
+      <!-- form -->
+       <div class="form-div d-flex flex-column position-absolute">
+        <h2>Request Quotes</h2>
+        <div class="form">
+          <form action="">
+            <div class="name d-flex">
+              <div class="firstName w-50">
+                <label for="firstName">
+                First Name:
+                </label>
+                <input type="text" name="firstName">
+              </div>
+              <div class="lastName w-50">
+                <label for="lastName">
+                Last Name:
+                </label>
+                <input type="text" name="lastName">
+              </div>
+            </div>
+
+            <div class="company d-flex flex-column">
+              <label for="company">Company</label>
+              <input type="text">
+            </div>
+
+            <div class="form-contact d-flex">
+              <div class="email w-50">
+                <label for="email">Email Address</label>
+                <input type="text">
+              </div>
+              <div class="phone w-50">            
+                <label for="phone">Phone Number</label>
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="hear-about d-flex flex-column">
+              <label for="hear-about">How Did You Hear About Us?</label>
+              <select name="hear-about" id="hear-about">
+              </select>
+            </div>
+
+            <div class="interest d-flex flex-column">
+              <label for="interest">Interested In</label>
+              <select name="interested" id="interested"></select>
+            </div>
+            <div class="form-btn">
+                <button>SUBMIT MY REQUEST</button>
+            </div>
+          </form>
+        </div>
+       </div>
+    </section>
+
+    <section class="ideas-section">
+      <div class="my-container">
+        <div class="ideas">
+          <h2>Ideas Unboxed</h2>
+          <div class="ideas-cards">
+            <div class="ideas-left">
+              <div class="ideas-left-img">
+                <img src="" alt="">
+              </div>
+              <div class="ideas-left-content">
+                <h3>Eco-Friendly Packaging: How to Improve Sustainability While Maintaining Durability</h3>
+                <p>Sustainability is more than a buzzword - it's a critical part of every industry. With growing consumer awareness and stricter regulations surrounding environmental responsibility, companies across all industries are looking for ways to reduce their carbon...</p>
+                <button>READ MORE</button>
+              </div>
+            </div>
+            <div class="ideas-right">
+              <div class="ideas-right-cards">
+                <div class="ideas-right-card">
+                  <div class="ideas-right-img">
+                  <img src="" alt="">
+                </div>
+                <div class="ideas-right-content">
+                  <h3>
+                    Tape Adhesion Issues? What To Do When Your Tape Won't Stick to Your Box
+                  </h3>
+                  <p>We've all been there. You're sealing up a shipment or returning a box online, feeling good about getting orders ot on time...</p>
+                  <button>READ MORE</button>
+                </div>
+                </div>
+                <div class="ideas-right-card">
+                  <div class="ideas-right-img">
+                  <img src="" alt="">
+                </div>
+                <div class="ideas-right-content">
+                  <h3>
+                    We Stock Thoudsands of Ready-to-Ship Packaging Solutions
+                  </h3>
+                  <p>From shipping boxes to bubble wrap and everything in between, our inventory is built to support your business with unparall</p>
+                  <button>READ MORE</button>
+                </div>
+                </div>
+                <div class="ideas-right-card">
+                  <div class="ideas-right-img">
+                  <img src="" alt="">
+                </div>
+                <div class="ideas-right-content">
+                  <h3>
+                    Increase Brand Recognition with Corrugated Packaging
+                  </h3>
+                  <p>Think about the last time you ordered something online or picked up a product in-store. Before you even got to what was...</p>
+                  <button>READ MORE</button>
+                </div>
+                </div>
+                
+              </div>
+              <div class="ideas-right-cards"></div>
+              <div class="ideas-right-cards"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
   </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js'></script>
+<script src="script.js"></script>
 </body>
 </html>
