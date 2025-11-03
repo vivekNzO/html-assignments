@@ -1,7 +1,10 @@
 $('.owl-carousel').owlCarousel({
+    // center:true,
     loop:true,
     margin:20,
     dots:false,
+    autoplay:true,
+    autoplayTimeout:5000,
     responsive:{
         0:{
             items:3
@@ -25,3 +28,22 @@ $('.carousel-next').click(function(){
     owl.trigger('next.owl.carousel')
 })
 
+$('.president-card').each(function(i){
+    $(this).click(function(j){
+        $('.president-card').each(function(){
+            $(this).removeClass('tabActive')
+        })
+
+        $('.president-bottom').each(function(k){
+            $(this).removeClass('tabActive')
+            $(this).addClass('d-none')
+
+            if(i==k){
+                $(this).addClass('tabActive')
+                $(this).removeClass('d-none')
+            }
+        })
+
+        $(this).addClass('tabActive')
+    })
+})
