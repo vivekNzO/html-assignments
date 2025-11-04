@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    background-image: url(./images/ec7d1082a659d96d896a773621e214c8f01b123c.jpg);
+    background-image: url(./images/Background.png);
 }
 
 .head{
@@ -325,6 +325,31 @@ a {
 
 
 
+/* hover button */
+
+.hover-button{
+    position: relative;
+}
+
+.hover-button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right,#5F0004,#ED1C25);
+    /* background-color: #221F1F; */
+    top: 0;
+    transition: all ease-in-out 0.5s;
+    
+}
+
+.hover-button:hover::before{
+    width: 100%;
+}
+
+
+
 
 .trusted-companies{
     display: flex;
@@ -420,7 +445,7 @@ a {
 /* BENEFITS SECTION */
 
 .benefits-section{
-    background-image: url(./images/ec7d1082a659d96d896a773621e214c8f01b123c.jpg);
+    background-image: url(./images/Background\ \(1\).png);
     height: auto;
     max-height: 763px;
 }
@@ -720,7 +745,7 @@ a {
 
 .solution-cards img{
     max-height: 111px;
-    max-width: 111px;
+    width: auto;
     margin: 0 auto;
 }
 
@@ -753,7 +778,7 @@ a {
 /* CAROUSEL */
 
 .carousel-section{
-    background-image: url(./images/ec7d1082a659d96d896a773621e214c8f01b123c.jpg);
+    background-image: url(./images/Background\ \(4\).png);
     padding: 90.33px 0px;
     position: relative;
 }
@@ -940,7 +965,7 @@ a {
 }
 
 .form-div{
-    padding: 35px 36px 48px 35px;
+    padding: 79px 36px 92px 35px;
     background-color: white;
     left: 50%;
     top: 50%;
@@ -1206,6 +1231,12 @@ ul, li{
     opacity: 0.77;
 }
 
+.footer-links>:nth-child(4) li{
+    font-size: 15px;
+    letter-spacing: 0.25px;
+    line-height: 22.86px;
+}
+
 .footer-links li img{
     margin-right: 20.34px;
 }
@@ -1215,4 +1246,12 @@ ul, li{
     color: #848D9A;
     font-size: 13px;
     line-height: 18px;
+}
+
+.footer-follow-us ul{
+    margin-top: -6px;
+}
+
+.footer-services ul{
+    margin-top: -2px;
 }
