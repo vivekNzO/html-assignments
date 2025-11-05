@@ -36,11 +36,12 @@ h2{
 }
 
 header{
+    position: relative;
     background-image: url(./images/hd_banner.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 100%;
-
+    z-index: 10;
 }
 
 .header-arrow{
@@ -227,6 +228,22 @@ nav ul{
     font-family: "Poppins",sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+.custom-headers button{
+    margin-top: 40px;
+    background-color: transparent;
+    background-image: url(./images/btn_bg.png);
+    font-size: 23px;
+    background-size: 100% 100%;
+    padding: 30px 35px;
+    transition: all ease-in-out 0.5s;
+    border: none;
+    font-family: "Bungee",sans-serif;
+    color: #0f591f;
+}
+.custom-headers button:hover{
+    transform: translateY(-10px);
 }
 
 .learn-more-btn{
@@ -695,12 +712,38 @@ nav ul{
     color: #0f591f;
 }
 
+.custom-headers h3{
+    font-size: 44px;
+    margin-bottom: 40px;
+    color: #0f591f;
+}
+
+.custom-headers h4{
+    color: #000;
+    font-size: 23px;
+    line-height: 37px;
+    font-weight: bold;
+    margin-bottom: 37px;
+    font-family: "Poppins",sans-serif;
+}
+.custom-headers p{
+    font-size: 17px;
+    color: #000;
+    line-height: 33px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+
 .services-section h4{
     color: #000;
     font-size: 23px;
     line-height: 37px;
     margin-bottom: 37px;
     font-family: "Poppins",sans-serif;
+    font-weight: bold;
 }
 
 .services-section p{
@@ -866,4 +909,79 @@ footer::before{
 .myAnimatedCard img{
     transform: translateZ(50px);
     transition: transform 0.3s ease-out;
+}
+
+
+
+
+/* ------------------ABOUT PAGE------------------- */
+
+/* ABOUT SECTION */
+
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/about-nw-bnr11.jpg);
+    padding: 500px 0px 150px 0px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-size: cover;
+    background-position: calc(50%) calc(100% - -100px);
+    position: relative;
+    margin-top: -178px;
+}
+
+.about-section::after{
+    content: "";
+    background-image: url(./images/btm_n_curve.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-size: 100% 100%;
+}
+
+.about-section h1{
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    text-shadow:  4px 3px rgba(0,0,0,0.6);
+    line-height: 80px;
+    margin-bottom: 30px;
+
+}
+.about-section span{
+    color: #ffd60d;
+}
+
+/* customer-service-section */
+
+.customer-service-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.customer-service-content{
+    display: flex;
+}
+
+.customer-service-left{
+    width: calc(45.75% - (100% - 1480px)/2);
+    margin: auto 0;
+    padding-right: 60px;
+}
+
+.customer-service-left img{
+    max-height: 510px;
+    width: auto;
+}
+
+.customer-service-right{
+    width: calc(54.25% - (100% - 1480px)/2);
+    margin: auto 0;
 }
