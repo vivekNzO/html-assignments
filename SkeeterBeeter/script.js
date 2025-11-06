@@ -10,8 +10,6 @@
       const rotateY = -x * 40; // how much to tilt horizontally
       const translateX = -x * 40; // lateral move
       const translateY = -y * 40; // vertical move
-      // const translateZ = (Math.abs(x)+Math.abs(y))*120;
-
 
 
       card.style.transform = `

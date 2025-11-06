@@ -241,6 +241,7 @@ nav ul{
     border: none;
     font-family: "Bungee",sans-serif;
     color: #0f591f;
+    line-height: 1;
 }
 .custom-headers button:hover{
     transform: translateY(-10px);
@@ -640,7 +641,7 @@ nav ul{
     position: relative;
 }
 
-.services-section::before{
+.mosquito-type-one::before{
     content: "";
     background-image: url(./images/flies.png);
     position: absolute;
@@ -672,7 +673,7 @@ nav ul{
     }
 }
 
-.services-section::after{
+.mosquito-type-two::after{
     content: "";
     background-image: url(./images/flies.png);
     position: absolute;
@@ -918,7 +919,7 @@ footer::before{
 
 /* ABOUT SECTION */
 
-.about-section{
+.about-page-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -932,7 +933,7 @@ footer::before{
     margin-top: -178px;
 }
 
-.about-section::after{
+.about-page-section::after{
     content: "";
     background-image: url(./images/btm_n_curve.png);
     background-repeat: no-repeat;
@@ -944,7 +945,7 @@ footer::before{
     background-size: 100% 100%;
 }
 
-.about-section h1{
+.about-page-section h1{
     text-align: center;
     color: white;
     font-size: 75px;
@@ -953,7 +954,7 @@ footer::before{
     margin-bottom: 30px;
 
 }
-.about-section span{
+.about-page-section span{
     color: #ffd60d;
 }
 
@@ -964,6 +965,12 @@ footer::before{
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+    position: relative;
+}
+
+.customer-service-section.mosquito-type-two::after{
+    right: 150px;
+    bottom: 100px;
 }
 
 .customer-service-content{
@@ -984,4 +991,47 @@ footer::before{
 .customer-service-right{
     width: calc(54.25% - (100% - 1480px)/2);
     margin: auto 0;
+}
+
+.customer-service-right h3{
+    font-size: 35px;
+}
+
+.skeeter-beeter-description-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 140px;
+    margin: -110px auto 120px auto;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 1000px 100px 1000px 100px;
+    max-width: 1300px;
+    box-shadow: 0px 0px 5px #00000042;
+    position: relative;
+}
+
+.skeeter-beeter-description{
+    text-align: center;
+}
+
+.skeeter-beeter-description p{
+    margin-bottom: 0;
+}
+
+.skeeter-beeter-description-section.mosquito-type-one::before{
+    height: 90px;
+    width: 90px;
+    top: 16px;
+    left: -175px;
+}
+
+/* CONTACT US PAGE */
+
+.contact-form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 330px 0px 100px 0px;
 }

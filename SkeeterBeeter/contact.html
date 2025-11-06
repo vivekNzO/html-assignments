@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a style="display: flex; align-items: center; gap: 10px;" href="">SERVICES <i class="header-arrow fa-solid fa-caret-down"></i></a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="header-logo">
+                <img src="./images/logo1.png" alt="">
+            </div>
+            <div class="header-contact">
+                <div class="header-contact-content">
+                    <span>CALL US NOW!</span>
+                    <span>843.276.6347</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>    
+
+    <main>
+        <div class="contact-form-section">
+            <div class="container">
+                <div class="contact-form">
+                    <div class="contact-form-left">
+                        <img src="./images/contact-img1.png" alt="">
+                    </div>
+                    <div class="contact-form-right">
+                        <h1>CONTACT <span>US</span></h1>
+                        <form action="submit">
+                            <div class="name">
+                                <div class="firstName">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text">
+                                </div>
+                                <div class="lastName">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="contact-div">
+                                <div class="email">
+                                    <label for="email">Email</label>
+                                    <input type="email">
+                                </div>
+                                <div class="phone-number">
+                                    <label for="phone-number">Phone</label>
+                                    <input type="tel">
+                                </div>
+                            </div>
+                            <div class="message-area">
+                                <label for="message-area">Message</label>
+                                <textarea name="message-area" id="message-area" rows="10" cols="50" ></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" data-aos="fade">
+            <div class="footer-top">
+            <div class="footer-top-left">
+                <img src="./images/logo1.png" alt="">
+            </div>
+            <div class="footer-top-right">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li>Services</li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Skeeter Beeter. All rights reserved. Site by FDM</span>
+            </div>
+        </div>
+    </footer>  
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 2000, 
+        once: true, 
+    });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
