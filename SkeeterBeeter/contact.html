@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
-                    <li><a style="display: flex; align-items: center; gap: 10px;" href="">SERVICES <i class="header-arrow fa-solid fa-caret-down"></i></a></li>
+                    <li style="display: flex; align-items: center; gap: 10px;" id="nav-services">SERVICES <i class="header-arrow fa-solid fa-caret-down"></i></li>
                     <li><a href="./contact.html">CONTACT US</a></li>
                 </ul>
             </nav>
@@ -45,10 +45,10 @@
         <div class="contact-form-section">
             <div class="container">
                 <div class="contact-form">
-                    <div class="contact-form-left">
+                    <div class="contact-form-left myAnimatedCard">
                         <img src="./images/contact-img1.png" alt="">
                     </div>
-                    <div class="contact-form-right">
+                    <div class="contact-form-right" data-aos="fade-left">
                         <h1>CONTACT <span>US</span></h1>
                         <form action="submit">
                             <div class="name">
@@ -74,6 +74,9 @@
                             <div class="message-area">
                                 <label for="message-area">Message</label>
                                 <textarea name="message-area" id="message-area" rows="10" cols="50" ></textarea>
+                            </div>
+                            <div class="custom-headers">
+                                <button>SUBMIT</button>
                             </div>
                         </form>
                     </div>

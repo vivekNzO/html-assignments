@@ -62,6 +62,14 @@ nav ul{
     margin-top: -10px;
 }
 
+nav ul>li{
+    transition: color 0.3s ease;
+}
+
+nav ul > li:hover{
+    color: #0F591F;
+}
+
 .header-contact{
     display: flex;
     /* flex-direction: column; */
@@ -242,6 +250,7 @@ nav ul{
     font-family: "Bungee",sans-serif;
     color: #0f591f;
     line-height: 1;
+    cursor: pointer;
 }
 .custom-headers button:hover{
     transform: translateY(-10px);
@@ -258,6 +267,7 @@ nav ul{
     border: none;
     font-family: "Bungee",sans-serif;
     color: #0f591f;
+    cursor: pointer;
 }
 
 .learn-more-btn:hover{
@@ -857,6 +867,14 @@ footer::before{
     padding: 0px 30px;
 }
 
+.footer-top-right ul > li{
+    transition: color 0.3s ease;
+}
+
+.footer-top-right ul>li:hover{
+    color: #FFD60D;
+}
+
 .footer-top-right li{
     font-size: 17px;
     line-height: 33px;
@@ -922,9 +940,10 @@ footer::before{
 .about-page-section{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     background-image: url(./images/about-nw-bnr11.jpg);
-    padding: 500px 0px 150px 0px;
+    padding: 200px 0px 150px 0px;
+    min-height: 760px;
     background-repeat: no-repeat;
     z-index: 1;
     background-size: cover;
@@ -1033,5 +1052,106 @@ footer::before{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 330px 0px 100px 0px;
+    padding: 155px 0px 100px 0px;
 }
+
+.contact-form{
+    display: flex;
+}
+
+.contact-form-left{
+    width: calc(47% - (100% - 1480px)/2);
+    margin: auto 0;
+}
+
+.contact-form-left img{
+    transform: scaleX(-1);
+}
+
+.contact-form-right{
+    width: calc(53% - (100% - 1480px)/2);
+    margin: auto 0;
+}
+
+.contact-form-right h1{
+    color: #0F591F;
+    font-size: 75px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.6);
+    margin-bottom: 50px;
+    line-height: 80px;
+}
+
+.contact-form-right span{
+    color: #ffd60d;
+}
+
+.contact-form-right form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px #00000026;
+    gap: 50px;
+}
+
+.contact-form-right .name{
+    display: flex;
+    gap: 13.75px;
+}
+
+.contact-form-right .name>div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-form-right .contact-div{
+    display: flex;
+    gap: 13.75px;
+}
+
+.contact-form-right .contact-div>div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-form-right .message-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 8px;
+    color: #000;
+    font-family: "Poppins",sans-serif;
+}
+
+.contact-form-right input, .contact-form-right textarea{
+    padding: 15px 20px;
+    width: 100%;
+    border: 2px solid #0e5b21e6;
+    border-radius: 40px;
+    height: 60px;
+}
+
+.contact-form-right input:focus, .contact-form-right textarea:focus{
+    /* border: 2px solid #0e5b21e6; */
+    outline: none;
+}
+
+
+.contact-form-right button{
+    margin: 0px 13px 0px 13px;
+    padding: 23.5px 36.5px;
+}
+
+textarea{
+    height: 160px !important;
+    resize: none;
+}
+

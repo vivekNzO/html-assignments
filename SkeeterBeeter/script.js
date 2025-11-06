@@ -21,3 +21,13 @@
     });
     })
 
+
+    const serviceDropdown = document.getElementById('nav-services')
+
+    serviceDropdown.addEventListener('click',()=>{
+      if(serviceDropdown.classList.contains('showDropDown')){
+        serviceDropdown.classList.remove('showDropDown')
+      }else{
+        serviceDropdown.classList.add('showDropDown');
+      }
+    })
