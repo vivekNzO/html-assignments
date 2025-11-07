@@ -35,6 +35,15 @@ h2{
     width: 100%;
 }
 
+.my-container-left{
+    width: calc(50% - (100% - 1480px)/2);
+    margin: auto 0;
+}
+.my-container-right{
+    width: calc(50% - (100% - 1480px)/2);
+    margin: auto 0;
+}
+
 header{
     position: relative;
     background-image: url(./images/hd_banner.png);
@@ -68,6 +77,40 @@ nav ul>li{
 
 nav ul > li:hover{
     color: #0F591F;
+}
+
+#nav-services{
+    position: relative;
+}
+
+
+.nav-services-dropdown{
+    background-color: #000;
+    color: white;
+    position: absolute;
+    top: 35px;
+    width: auto;
+    left: -35px;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.nav-services-dropdown a{
+    display: block;
+    white-space: nowrap;
+    padding: 15px 40px 15px 10px;
+}
+
+.nav-services-dropdown a:hover{
+    background-color: #0F591F;
+}
+
+.nav-services-dropdown a:nth-of-type(2){
+    border-top: 1px solid #c7c7c738;
+}
+
+#nav-services.showDropDown .nav-services-dropdown{
+    display: block;
 }
 
 .header-contact{
@@ -154,7 +197,7 @@ nav ul > li:hover{
 }
 
 .hero{
-    padding: 450px 0px 195px 0px;
+    padding: 440px 0px 205px 0px;
 }
 
 .hero-overlay {
@@ -353,7 +396,7 @@ nav ul > li:hover{
     }
 }
 
-.learn-more-right-image::after{
+.mosquito-type-three::after{
     content: "";
     position: absolute;
     width: 180px;
@@ -723,6 +766,13 @@ nav ul > li:hover{
     color: #0f591f;
 }
 
+.custom-headers h2{
+    font-size: 55px;
+    line-height: 63px;
+    color: #0f591f;
+    font-weight: 500;
+}
+
 .custom-headers h3{
     font-size: 44px;
     margin-bottom: 40px;
@@ -780,13 +830,13 @@ nav ul > li:hover{
 }
 
 .automatic-left{
-    width: calc(45.75% - (100% - 1480px)/2);
+    width: calc(45.85% - (100% - 1480px)/2);
     margin: auto 0;
     padding-right: 60px;
 }
 
 .automatic-right{
-    width: calc(54.25% - (100% - 1480px)/2);
+    width: calc(54.15% - (100% - 1480px)/2);
     margin: auto 0;
 }
 
@@ -937,22 +987,25 @@ footer::before{
 
 /* ABOUT SECTION */
 
-.about-page-section{
+.my-hero-section{
     display: flex;
     justify-content: center;
     align-items: end;
-    background-image: url(./images/about-nw-bnr11.jpg);
     padding: 200px 0px 150px 0px;
     min-height: 760px;
     background-repeat: no-repeat;
     z-index: 1;
-    background-size: cover;
-    background-position: calc(50%) calc(100% - -100px);
+    background-size: 130%;
     position: relative;
     margin-top: -178px;
+    background-position: top center;
 }
 
-.about-page-section::after{
+.about-page-section.my-hero-section{
+    background-image: url(./images/about-nw-bnr11.jpg);
+}
+
+.my-hero-section::after{
     content: "";
     background-image: url(./images/btm_n_curve.png);
     background-repeat: no-repeat;
@@ -964,16 +1017,16 @@ footer::before{
     background-size: 100% 100%;
 }
 
-.about-page-section h1{
+.my-hero-section h1{
     text-align: center;
     color: white;
     font-size: 75px;
-    text-shadow:  4px 3px rgba(0,0,0,0.6);
+    text-shadow:  0px 4px 3px rgba(0,0,0,0.6);
     line-height: 80px;
     margin-bottom: 30px;
 
 }
-.about-page-section span{
+.my-hero-section span{
     color: #ffd60d;
 }
 
@@ -997,7 +1050,7 @@ footer::before{
 }
 
 .customer-service-left{
-    width: calc(45.75% - (100% - 1480px)/2);
+    width: calc(45.85% - (100% - 1480px)/2);
     margin: auto 0;
     padding-right: 60px;
 }
@@ -1008,7 +1061,7 @@ footer::before{
 }
 
 .customer-service-right{
-    width: calc(54.25% - (100% - 1480px)/2);
+    width: calc(54.15% - (100% - 1480px)/2);
     margin: auto 0;
 }
 
@@ -1154,4 +1207,341 @@ textarea{
     height: 160px !important;
     resize: none;
 }
+
+/*-------------------------- MOSQUITO BARRIERS PAGE------------------------ */
+
+/* mosquito barrier hero */
+
+.barrier-hero-section.my-hero-section{
+    background-image: url(./images/barrier-bnr-nw1.jpg);
+}
+
+.technicians-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    position: relative;
+}
+
+.technicians-section.mosquito-type-one::before{
+    height: 60px;
+    width: 120px;
+    top: 75px;
+}
+
+.technicians{
+    display: flex;
+}
+
+
+.technicians-left{
+    text-align: left;
+    position: relative;
+}
+
+.technicians-left{
+    max-height: 580px;
+}
+
+.technicians-left.mosquito-type-three::after{
+    height: 60px;
+    width: 60px;
+    right: 150px;
+    top: 170px;
+    bottom: 0;
+}
+
+.technicians-left img{
+    max-height: 580px;
+    width: auto;
+}
+
+.technicians-right h5{
+    color: #efc600;
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 34px;
+    font-family: "Poppins",sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.technicians-right h2{
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.technicians-right p{
+    text-align: center;
+}
+
+/* mosquito barrier section */
+
+.mosquito-barrier-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 280px 0px 190px 0px;
+    background-color: #0F591F;
+    position: relative;
+}
+
+.mosquito-barrier-section .container{
+    position: relative;
+}
+
+.mosquito-barrier-section .mosquito-type-three::after{
+    background-image: url(./images/flies.png);
+    height: 130px;
+    width: 130px;
+    top: -30px;
+    right: 0;
+    bottom: 0;
+}
+
+.mosquito-barrier{
+    text-align: center;
+}
+
+.mosquito-barrier p{
+    max-width: 1170px;
+    margin: 0 auto 20px auto;
+    color: white;
+}
+
+.mosquito-barrier h2{
+    margin-bottom: 38px;
+    color: #FFD60D;
+}
+
+.mosquito-barrier-section::before{
+    content: "";
+    background-image: url(./images/curve_ic_top.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    background-size: 100% 100%;
+}
+
+.mosquito-barrier-section::after{
+    content: "";
+    background-image: url(./images/curve_ic_btm.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+/* spray uses */
+
+.spray-uses-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    position: relative;
+}
+
+.spray-uses{
+    display: flex;
+    margin-top: 50px;
+}
+
+.spray-uses-section.mosquito-type-two::after{
+    right: 85px;
+    bottom: 95px;
+}
+
+.spray-uses-right{
+    padding-left: 60px;
+    text-align: right;
+    max-height: 510px;
+}
+
+.spray-uses-right img{
+    max-height: 510px;
+    width: auto;
+}
+
+.why-choose{
+    display: flex;
+    border-top:1px solid #0f591f2b;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+
+.why-choose-left{
+    width: calc(45.85% - (100% - 1480px)/2);
+    margin: auto 0;
+    text-align: left;
+    padding-right: 60px;
+}
+
+.why-choose-left img{
+    max-height: 510px;
+    width: auto;
+}
+
+.why-choose-right{
+    width: calc(54.15% - (100% - 1480px)/2);
+    margin: auto 0;
+}
+
+.natural-spray-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 15px 100px 15px;
+}
+
+.natural-spray-right h2{
+    font-size: 40px;
+    margin-bottom: 38px;
+    line-height: 47px;
+}
+
+.natural-spray-right p{
+    max-width: 620px;
+}
+
+.natural-spray{
+    display: flex;
+    background-color: #FFD60D;
+    position: relative;
+    border-radius: 1000px 100px 1000px 100px;
+    padding: 60px;
+}
+
+.natural-spray-left{
+    width: calc(50% - (100% - 1360px)/2);
+    margin: auto 0;
+    text-align: center;
+}
+.natural-spray-right{
+    width: calc(50% - (100% - 1360px)/2);
+    margin: auto 0;
+}
+
+.natural-spray-left img{
+    max-width: 520px;
+    margin-top: -150px;
+    position: relative;
+    z-index: 10;
+}
+
+.natural-spray-section .container{
+    position: relative;
+}
+
+.natural-spray-section .container::before{
+    content: "";
+    position: absolute;
+    background-color: #0F591F;
+    width: 32%;
+    height: 80%;
+    left: 0;
+    bottom: 0;
+    border-radius: 680px 150px 710px 250px;
+    z-index: 1;
+}
+
+
+/* AUTOMATIC PAGW */
+
+.automatic-benefits-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    position: relative;
+}
+
+.automatic-hero-section.my-hero-section{
+    background-image: url(./images/automated-bnr1.jpg);
+    background-position: top left;
+}
+
+.automatic-benefits{
+    display: flex;
+    margin-top: 37px;
+}
+
+.automatic-benefits-left{
+    width: calc(45.85% - (100% - 1480px)/2);
+    margin: auto 0;
+    padding-right: 60px;
+    max-height: 510px;
+}
+
+.automatic-benefits-left img{
+    max-height: 510px;
+    width: auto;
+}
+
+.automatic-benefits-right{
+    width: calc(54.15% - (100% - 1480px)/2);
+    margin: auto 0;
+}
+
+.automatic-approach-section{
+    min-height: 733px;
+    background-color: #FFD60D;
+    /* padding: 260px 0px 130px 0px; */
+
+    position: relative;
+}
+
+.automatic-approach h2{
+    color: #0F591F;
+}
+
+.automatic-approach p{
+    color: #000;
+}
+
+.kick-out-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    position: relative;
+}
+
+.kick-out{
+    display: flex;
+    min-height: 560px;
+}
+
+.kick-out-left{
+    width: calc(44% - (100% - 1480px)/2);
+    margin: auto 0;
+}
+
+.kick-out-right{
+    width: calc(56% - (100% - 1480px)/2);
+    margin: auto 0;
+    text-align: center;
+}
+
+.kick-out-right img{
+    max-height:510px;
+    width: auto;
+}
+
+.kick-out-section.mosquito-type-one::before{
+    top: -50px;
+    left: 150px;
+}
+
+
 
