@@ -45,6 +45,7 @@
 
 
   const serviceDropdown = document.getElementById('nav-services')
+  const asideDropdown = document.getElementById('aside-services')
 
   serviceDropdown.addEventListener('click',()=>{
     if(serviceDropdown.classList.contains('showDropDown')){
@@ -53,3 +54,21 @@
       serviceDropdown.classList.add('showDropDown');
     }
   })
+
+  asideDropdown.addEventListener('click',()=>{
+    asideDropdown.classList.toggle('showDropDown')
+  })
+
+
+
+  const hamburgerBtn = document.querySelector(".hamburger");
+  const sidebar =  document.querySelector(".sidebar");
+  const closeHamburgerBtn = document.querySelector(".close-hamburger")
+
+  hamburgerBtn.addEventListener('click',()=>{
+    sidebar.classList.toggle('active')
+  })
+  closeHamburgerBtn.addEventListener('click',()=>{
+    sidebar.classList.toggle('active')
+  })
+
