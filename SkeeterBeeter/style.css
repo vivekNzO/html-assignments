@@ -68,6 +68,10 @@ header{
     align-items: center;
 }
 
+.navbar nav{
+    width: 40%;
+}
+
 nav ul{
     display: flex;
     gap: 40px;
@@ -229,7 +233,7 @@ header nav ul > li:hover{
     padding: 10px;
     z-index: 100;
     top: 15px;
-    right: 15px;
+    right: 50px;
 }
 
 .close-hamburger img{
@@ -246,7 +250,7 @@ header nav ul > li:hover{
     position: fixed;
     top: 0;
     right: 0;
-    width: 250px;
+    width: 300px;
     height: 100%;
     background-color: #0F591F;
     color: white;
