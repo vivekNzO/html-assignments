@@ -67,8 +67,10 @@
 
   hamburgerBtn.addEventListener('click',()=>{
     sidebar.classList.toggle('active')
+    document.body.classList.add('no-scroll')
   })
   closeHamburgerBtn.addEventListener('click',()=>{
     sidebar.classList.toggle('active')
+    document.body.classList.remove('no-scroll')
   })
 
