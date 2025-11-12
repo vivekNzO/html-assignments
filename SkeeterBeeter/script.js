@@ -20,6 +20,7 @@
       `;
     });
     })
+
     const cards2 = document.querySelectorAll(".myAnimatedCard2");
 
     cards2.forEach(card=>{
@@ -45,32 +46,19 @@
 
 
   const serviceDropdown = document.getElementById('nav-services')
-  const asideDropdown = document.getElementById('aside-services')
 
   serviceDropdown.addEventListener('click',()=>{
-    if(serviceDropdown.classList.contains('showDropDown')){
-      serviceDropdown.classList.remove('showDropDown')
-    }else{
-      serviceDropdown.classList.add('showDropDown');
-    }
-  })
-
-  asideDropdown.addEventListener('click',()=>{
-    asideDropdown.classList.toggle('showDropDown')
+    serviceDropdown.classList.toggle('showDropDown')
   })
 
 
 
   const hamburgerBtn = document.querySelector(".hamburger");
-  const sidebar =  document.querySelector(".sidebar");
+  const navLinks =  document.querySelector(".nav-links");
   const closeHamburgerBtn = document.querySelector(".close-hamburger")
 
   hamburgerBtn.addEventListener('click',()=>{
-    sidebar.classList.toggle('active')
-    document.body.classList.add('no-scroll')
-  })
-  closeHamburgerBtn.addEventListener('click',()=>{
-    sidebar.classList.toggle('active')
-    document.body.classList.remove('no-scroll')
+    navLinks.classList.toggle('active')
+    document.body.classList.toggle('no-scroll')
   })
 
