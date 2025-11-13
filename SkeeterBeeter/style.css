@@ -1952,7 +1952,25 @@ textarea{
 }
 
 @media (max-width:1024px){
+    footer{
+        margin-bottom: 90px;
+    }
     .header-contact{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        background: #0F591F;
+        justify-content: center;
+        padding: 20px 0px;
+        transform: translateY(100%);
+    }
+    .header-contact.show{
+        transform: translateY(0);
+    }
+    .header-contact::before{
         display: none;
     }
 
@@ -2539,11 +2557,273 @@ textarea{
     .footer-bottom span{
         font-size: 14px;
     }
+
+    .header-logo img{
+        max-height: 130px;
+    }
+    .hamburger{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+    .hero h1{
+        font-size: 35px;
+        line-height: 48px;
+        margin-bottom: 18px;
+    }
+    .hero p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .learn-more-section {
+        padding: 20px 0px;
+    }
+    .learn-more-right-image{
+        max-width: 360px;
+    }
+    .learn-more-left h5{
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        max-width: 400px;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .learn-more-left h2{
+        margin-bottom: 20px;
+    }
+    .learn-more-left p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .learn-more-btn{
+        font-size: 14px;
+        padding: 16px 20px;
+        margin-top: 10px;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-left{
+        width: 100%;
+    }
+    .about-right{
+        width: 100%;
+    }
+
+    .about-left img{
+        max-height: 350px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 40px;
+    }
+    .about-left::before{
+        display: none;
+    }
+    .about-right{
+        padding: 10px;
+    }
+    .about-right h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .about-right p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .steps-cards{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .steps-card{
+        margin-bottom: 35px;
+    }
+    .steps-card p{
+        font-size: 15px;
+        line-height: 22px;
+        max-width: 290px;
+        margin-top: 10px;
+    }
+    .steps-card p::before{
+        bottom: calc(100% + 0px);
+        -webkit-animation: mymove3Mobile 2.5s infinite;
+    }
+    @keyframes mymove3Mobile{
+        0%{
+            height: 10px;
+        }
+        50%{
+            height: 50px;
+        }
+        100%{
+            height: 10px;
+        }
+    }
+    .steps-section{
+        padding-bottom: 25px;
+    }
+    .steps-section::after{
+        height: 100px;
+    }
+    .services h2 {
+        margin-bottom: 30px;
+    }
+    .services-right img{
+        max-height: 350px;
+    }
+    .custom-headers h3{
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .custom-headers h4{
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+    .custom-headers p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .custom-headers button{
+        font-size: 15px;
+        padding: 18px 22px;
+        margin-top: 14px;
+    }
+    .automatic-left img {
+        max-height: 320px;
+    }
+    .automatic-right h5{
+        margin-bottom: 6px;
+        font-size: 19px;
+    }
+    .automatic-right li{
+        font-size: 14px;
+        padding: 10px 50px;
+    }
+
 }
 
 @media (max-width:575px){
-    *{
-        display: none;
+    .header-logo{
+        margin-bottom: -40px;
+    }
+    .header-logo img {
+        max-height: 110px;
+    }
+    .hero h1 {
+        font-size: 31px;
+        line-height: 44px;
+        margin-bottom: 16px;
+    }
+    .hero p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .hero-section::after{
+        background-size: cover;
+        height: 50px;
+    }
+    .learn-more-right-image{
+        margin-left: 80px;
+        max-width: 250px;
+    }
+    .learn-more-left h5{
+        margin-bottom: 18px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .learn-more-left p {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 14px;
+    }
+    .learn-more-btn {
+        font-size: 13px;
+        padding: 14px 20px;
+        margin-top: 8px;
+    }
+    .about-left img{
+        max-height: 250px;
+    }
+    .about-right h2 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    .about-right p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .steps-card h3 {
+        width: 165px;
+        height: 165px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .steps-card h3::before {
+        top: -25px;
+        height: 55px;
+        width: 55px;
+    }
+    .steps-card p {
+        font-size: 13px;
+        line-height: 18px;
+        max-width: 235px;
+        margin-top: 5px;
+    }
+    .services h2 {
+        margin-bottom: 26px;
+    }
+    .services-right img {
+        max-height: 250px;
+    }
+    .custom-headers h3 {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+    .custom-headers h4{
+        line-height: 24px;
+        margin-bottom: 14px;
+    }
+    .custom-headers p{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 14px;
+    }
+    .custom-headers button {
+        font-size: 14px;
+        padding: 16px 20px;
+        margin-top: 10px;
+    }
+    .automatic{
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+    .automatic-left img {
+        max-height: 230px;
+    }
+    .automatic-right h5{
+        margin-bottom: 6px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .automatic-right li{
+        font-size: 13px;
+    }
+    .steps-section::before{
+        height: 100px;
+        background-size: cover;
+    }
+    footer::before{
+        background-size: cover;
+        background-position: left;
+    }
+    .footer-top{
+        gap: 10px;
     }
 }
 

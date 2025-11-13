@@ -62,3 +62,13 @@
     document.body.classList.toggle('no-scroll')
   })
 
+  const contact = document.querySelector(".header-contact")
+
+  window.addEventListener('scroll',()=>{
+    if(window.scrollY>500){
+      contact.classList.add('show')
+    }
+    else{
+      contact.classList.remove('show')
+    }
+  })
